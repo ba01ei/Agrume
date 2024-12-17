@@ -447,7 +447,6 @@ extension AgrumeCell: UIGestureRecognizerDelegate {
       
       let modifier = UIDynamicItemBehavior(items: [imageView])
       modifier.angularResistance = angularResistance(in: imageView)
-      modifier.density = density(in: imageView)
       modifier.allowsRotation = panPhysics.allowsRotation
       animator!.addBehavior(modifier)
     }
